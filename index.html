@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+    <title>Adi Cooks - Sneaker Store</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://www.dafontfree.net/embed/ZXVyb3N0aWxlLWV4dGVuZGVkLWJvbGQmZGF0YS8yNC9lLzEyMzg1OS9FdXJvc3RpbGVFeHRlbmRlZEJsYWNrLnR0Zg"
+        rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="slide.js"></script>
+    <style>
+        .home_header {
+            position: relative;
+            left: -100%;
+            /* Start off the screen */
+            animation: slideInFromLeft 1s ease forwards;
+        }
+
+        .home_pic {
+            position: relative;
+            right: -100%;
+            /* Start off the screen */
+            animation: slideInFromRight 1s ease forwards;
+        }
+
+        @keyframes slideInFromTop {
+            to {
+                top: 0;
+                /* Slide in to the final position */
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            to {
+                left: 0;
+                /* Slide in to the final position */
+            }
+        }
+
+        @keyframes slideInFromRight {
+            to {
+                right: 0;
+                /* Slide in to the final position */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="nike.html">Nike</a>
+                        <a href="jordan.html">Jordan</a>
+                        <a href="misc.html">Yeezy</a>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-down"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                    </svg>
+                </li>
+                <li><a href=#about>About</a></li>
+                <li><a href=#Testimonials>Testimonials</a></li>
+                <li><a href=#contact>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="icons">
+        <div class="search">
+            <a target=_blank href="https://google.com">
+                <i class="fa fa-search" style="font-size: 40px;"></i>
+            </a>
+        </div>
+
+        <div class="cart">
+            <a href="cart.html">
+                <i class="fa fa-shopping-cart" style="font-size: 40px;"><span
+                        style="font-family:'MicroSquare'; color:white; "></span></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="title">
+        <img src="img/aksoles.png">
+    </div>
+    <div class="home_header">
+        <h1>An Online <br> Sneaker <br> <span style="color: hsla(6, 100%, 66%, 1);">Store</span></h1>
+        <p class="shop-here"><span style="color: white; position: relative; top: -150px;">Find your kicks. </span></p>
+        <button>
+            <a href="#new" style="color: white; text-decoration: none;">Shop Now</a>
+        </button>
+    </div>
+    <section class="home_pic">
+        <img src="img/image.jpg">
+    </section>
+
+    <section class="new" id="new">
+        <div class="news">
+            <h1>Popular <span style="color: hsla(6, 100%, 66%, 1);">Products</span></h1>
+            <div class="scroll-arrows">
+                <div class="scroll-arrow left-arrow">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+                <div class="scroll-arrow right-arrow">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="new-items">
+            <div class="new-item">
+                <img src="img/needle.png">
+                <h6>Nike Dunk Low Needlework<br><span style=" font-size: 20px; position: relative; top: 5px">Size 7
+                        <br>$150</span> <br>
+                    <a class="atc" data-tag="needle" href="#">Add to Cart</a>
+                </h6>
+            </div>
+
+            <div class="new-item">
+                <img src="img/gardenia.png">
+                <h6>Nike Dunk Low Gardenia<br><span style=" font-size: 20px; position: relative; top: 5px">Size 9.5
+                        <br>$225</span> <br>
+                    <a class="atc" data-tag="gardenia" href="#">Add to Cart</a>
+                </h6>
+            </div>
+
+            <div class="new-item">
+                <img src="img/slag.png">
+                <h6>Nike Dunk Low <br> SLAG<br><span style=" font-size: 20px; position: relative; top: 5px">Size 9.5
+                        <br>$200</span> <br>
+                    <a class="atc" data-tag="slag" href="#">Add to Cart</a>
+                </h6>
+            </div>
+
+            <div class="new-item">
+                <img src="img/panda.png">
+                <h6>Nike Dunk Low <br> "Panda"<br><span style=" font-size: 20px; position: relative; top: 5px">Size 9.5
+                        <br>$150</span> <br>
+                    <a class="atc" data-tag="panda" href="#">Add to Cart</a>
+                </h6>
+            </div>
+            <div class="new2" style="display: none;">
+                <div class="new-item">
+                    <img src="img/reimagined.png">
+                    <h6>Air Jordan 3 Reimagined<br><span style=" font-size: 20px; position: relative; top: 5px">Size 8.5
+                            <br>$275</span> <br>
+                        <a class="atc" data-tag="reimagined" href="#">Add to Cart</a>
+                    </h6>
+                </div>
+
+                <div class="new-item">
+                    <img src="img/seafoam.png">
+                    <h6>Air Jordan 4 Seafoam<br><span style=" font-size: 20px; position: relative; top: 5px">Size 11
+                            <br>$250</span> <br>
+                        <a class="atc" data-tag="seafoam" href="#">Add to Cart</a>
+                    </h6>
+                </div>
+
+                <div class="new-item">
+                    <img src="img/midnight.png">
+                    <h6>Air Jordan 4 Midnight Navy <br><span style=" font-size: 20px; position: relative; top: 5px">Size 10.5
+                            <br>$300</span> <br>
+                        <a class="atc" data-tag="midnight" href="#">Add to Cart</a>
+                    </h6>
+                </div>
+
+                <div class="new-item">
+                    <img src="img/canvas.png">
+                    <h6>Air Jordan 4 Black Canvas <br><span style=" font-size: 20px; position: relative; top: 5px">Size 12
+                            <br>$375</span> <br>
+                        <a class="atc" data-tag="canvas" href="#">Add to Cart</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="new3" style="display: none;">
+                <div class="new-item">
+                    <img src="img/onyx.png">
+                    <h6>Adidas Yeezy Boost 350 Onyx<br><span style=" font-size: 20px; position: relative; top: 5px">Size 10
+                            <br>$275</span> <br>
+                        <a class="atc" data-tag="onyx" href="#">Add to Cart</a>
+                    </h6>
+                </div>
+
+                <div class="new-item">
+                    <img src="img/pirate.png">
+                    <h6>Adidas Yeezy Boost 350 Pirate Black<br><span style=" font-size: 20px; position: relative; top: 5px">Size 10
+                            <br>$300</span> <br>
+                        <a class="atc" data-tag="pirate" href="#">Add to Cart</a>
+                    </h6>
+                </div>
+
+                <div class="new-item">
+                    <img src="img/cinder.png">
+                    <h6>Adidas Yeezy Foam Runner Mx Cinder<br><span style=" font-size: 20px; position: relative; top: 5px">Size 10
+                            <br>$150</span> <br>
+                        <a class="atc" data-tag="cinder" href="#">Add to Cart</a>
+                    </h6>
+                </div>
+
+                <div class="new-item">
+                    <img src="img/slide.png">
+                    <h6>Adidas Yeezy Slide Onyx<br><span style=" font-size: 20px; position: relative; top: 5px">Size 9
+                            <br>$150</span> <br>
+                        <a class="atc" data-tag="slide" href="#">Add to Cart</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <img class="abt_pic" src="IMG_2878.jpg">
+        <p>About Me</p>
+        <h3>My name is Adi Khurana, a sophomore at Moorestown High School in New Jersey, and the founder of AK Soles LLC. I have been running a successful six-figure limited edition sneaker reselling business since early 2020. I leverage technology as an enabler to grow my business, help my customers find limited edition shoes, and assist other business owners to scale their business. I am passionate to provide exceptional customer service, competitive pricing, and engage in convenient, trustworthy, and transparent transactions. <br> <br>
+            My business story has a humble beginning with hard work and dedication to learn about the sneaker industry at a early age. I have been fortunate to create a name for myself among sneaker enthusiasts in the industry. My ambition is to continue scaling this business and help other like minded individuals understand the sneaker reselling industry. <br>
+            <button>
+                <a href="#contact" style="color: white; text-decoration: none;">Contact Me</a>
+            </button>
+        </h3>
+    </section>
+
+    <section class="testimonial" id="Testimonials">
+        <h1>What Our <span style="color: hsla(6, 100%, 66%, 1);">Customers Say</span></h1>
+        <div class="tests">
+            <div class="test">
+                <h3>"Scored an incredible find at this online shop – their selection of limited edition sneakers is a true sneakerhead's dream."
+                </h3>
+            </div>
+            <div class="test">
+                <h3>"Top-notch service and authentic limited edition sneakers – this online store never disappoints."
+                </h3>
+            </div>
+            <div class="test">
+                <h3>"If you're into rare kicks, this online sneaker shop is a goldmine of exclusive finds."
+                </h3>
+            </div>
+            <div class="test">
+                <h3>"The limited edition sneakers I ordered from this online store turned out to be 100% legit and worth every penny."
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Us <span style="color: hsla(6, 100%, 66%, 1);">Via Email</span></h1>
+        <div class="email-box">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Sign Up</button>
+        </div>
+    </section>
+
+    <div class="footer">
+        <hr>
+        <span>AK Soles &copy;2023 &#8212; Adi Khurana</span>
+        <div class="social-icons">
+            <a href="https://discord.com" target="_blank" rel="noopener">
+                <span>adicooks</span>
+                <img src="Discord.png" alt="Discord">
+            </a>
+            <a href="https://gmail.com" target="_blank" rel="noopener">
+                <span>adi@adicooks.com</span>
+                <img src="Gmail.png" alt="Gmail">
+            </a>
+            <a href="https://github.com/adicooks" target="_blank" rel="noopener">
+                <span>adicooks</span>
+                <img src="GitHub.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/adi-khurana1/" target="_blank" rel="noopener">
+                <span style="width: 95px;">Adi Khurana</span>
+                <img src="LinkdIn.png" alt="LinkdIn">
+            </a>
+        </div>
+    </div>
+
+</body>
