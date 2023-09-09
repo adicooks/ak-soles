@@ -466,8 +466,8 @@ nav a:hover {
 }
 
 .contact {
-    position: absolute;
-    top: 2600px;
+    position: relative;
+    top: -200px;
     left: 50px;
 }
 
