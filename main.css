@@ -15,6 +15,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: url("img/test2.png");
     background-size: cover;
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -363,11 +364,10 @@ nav a:hover {
 
 .abt_pic {
     position: relative;
-    width: 400px;
-    left: 150px;
+    width: 500px;
+    left: 100px;
     border-radius: 15px;
 }
-
 
 .about p {
     font-size: 30px;
@@ -383,7 +383,7 @@ nav a:hover {
 }
 
 .about h3 {
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     width: 500px;
     text-align: justify;
@@ -395,7 +395,7 @@ nav a:hover {
 .about h3 {
     position: relative;
     left: 55%;
-    top: -575px;
+    top: -500px;
     margin-top: -20px;
 }
 
@@ -422,7 +422,7 @@ nav a:hover {
 
 .testimonial {
     position: relative;
-    top: -375px;
+    top: -275px;
 }
 
 .testimonial h1 {
@@ -457,7 +457,6 @@ nav a:hover {
     color: white;
     text-align: justify;
     font-family: 'Poppins';
-    font-style: italic;
 
 }
 
@@ -466,8 +465,8 @@ nav a:hover {
 }
 
 .contact {
-    position: relative;
-    top: -200px;
+    position: absolute;
+    top: 3000px;
     left: 50px;
 }
 
@@ -661,7 +660,7 @@ button[type="submit"] {
 
     .abt_pic {
         position: relative;
-        width: 400px;
+        width: 500px;
     }
 
     .about h1,
@@ -675,8 +674,8 @@ button[type="submit"] {
 
     .abt_pic {
         position: relative;
-        width: 400px;
-        left: calc(50% - 250px)
+        width: 600px;
+        left: calc(50% - 300px)
     }
 
     .about h1,
@@ -783,11 +782,6 @@ button[type="submit"] {
     .footer {
         transform: translateY(2100px);
     }
-
-    .abt_pic {
-        width: 350px;
-        left: 50px;
-    }
 }
 
 @media screen and (max-width: 575px) {
@@ -807,23 +801,6 @@ button[type="submit"] {
 
     .email-box {
         width: 5000px;
-    }
-
-    .abt_pic {
-        width: 325px;
-        left: 85px;
-        top: 65px;
-    }
-
-    .about h1 {
-        width: 400px;
-        font-size: 50px;
-        left: 250px;
-    }
-
-    .about h3 {
-        width: 300px;
-        left: 370px;
     }
 
 
@@ -884,8 +861,8 @@ button[type="submit"] {
         }
 
         .abt_pic {
-            width: 250px;
-            left: 65px;
+            width: 300px;
+            left: 45px;
             top: 65px;
         }
 
