@@ -466,7 +466,7 @@ nav a:hover {
 
 .contact {
     position: absolute;
-    top: 3000px;
+    top: 2650px;
     left: 50px;
 }
 
@@ -661,12 +661,13 @@ button[type="submit"] {
     .abt_pic {
         position: relative;
         width: 500px;
+        transform: translateX(-50px);
     }
 
     .about h1,
     .about p,
     .about h3 {
-        transform: translateX(-100px);
+        transform: translateX(-25px);
     }
 }
 
@@ -785,6 +786,17 @@ button[type="submit"] {
 }
 
 @media screen and (max-width: 575px) {
+
+    .abt_pic {
+        width: 450px;
+        left: 100px;
+    }
+
+    .news h1 {
+        width: 250px;
+        top: -250px;
+        left: 125px;
+    }
 
     .about h1,
     .about h3,
@@ -915,5 +927,27 @@ button[type="submit"] {
             top: -45px;
         }
 
+    }
+
+    @media screen and (max-width: 450px) {
+        .abt_pic {
+            left: 90px;
+        }
+
+        .news h1 {
+            transform: translateX(-50px);
+        }
+
+        .about {
+            left: 25px;
+        }
+
+        .testimonial h1 {
+            left: 15px;
+        }
+
+        .contact h1 {
+            left:50px;
+        }
     }
 }
